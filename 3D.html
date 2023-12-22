@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>相册</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="box">
+    <ul class="minbox">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol class="maxbox">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+<script language="javascript">
+function playmusic(){
+var xx=document.getElementById("bgsound").src;
+var url="C:\Users\Windows 10\Desktop\3D\IMG/音樂.mp3";
+if(xx==""){
+document.getElementById("bgsound").src=url;
+document.getElementById("musicbtn").value="停止播放";
+}else{
+document.getElementById("bgsound").src="";
+document.getElementById("musicbtn").value="播放音樂";
+}
+}
+</script>
+<input id="musicbtn" onClick="playmusic()" value="播放音樂" type="button" />
+<bgsound src="" loop="-1" id="bgsound" />
+</body>
+</html>
